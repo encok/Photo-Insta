@@ -1,82 +1,58 @@
-***
 
-# Instagran Clone
+# Project Title
+Insta-Clone
 
-## Friday, October 23 2020 ;
 
----
+# Author
+  **[Enock Kipronoh](https://github.com/encok)**
 
-## Author
-> [Akumu Collins](https://github.com/Akumucollins)
 
-***
+## Link to Live Site 
+
+
+
 
 ## Description
->This is a Django application that allows users to upload, like and comment on other peoples images. Images must have captions and users have profiles where they can see all their images
-
----
-
-## User Story  
+  This is an application that a user can sign up and login and then proceed to add an instagram story. One is able to also add an image. Other user can interact with their stories and like and also leave a comment.
   
-* Sign in to the application to start using.
-* Upload my pictures to the application.
-* See my profile with all my pictures.
-* Follow other users and see their pictures on my timeline.
-* Like a picture and leave a comment on it.  
 
----
 
-## Live Link
-[View Site](https://instaroom.herokuapp.com/)
+## Screenshots
+<img src="static/images/1.png">
+<img src="static/images/2.png">
+<img src="static/images/3.png">
 
-***
 
-## Setup/Installation Requirements
-To get the code..
-Cloning the repository:
- https://github.com/Akumucollins/Instagram-Clone.git
-  
-Move to the folder and install requirements
-  ```bash
-  cd Instagram
-  pip install -r requirements.txt
-  ```
-Setup Configurations and  Database
-  ```bash 
-  python3 manage.py makemigrations gallery 
-  ``` 
-Running the application
-  ```bash
-  python3 manage.py runserver
-  ```
-  
-Testing the application
-  ```bash
-  python3 manage.py test
-  ```
-Open the application on your browser 
-[127.0.0.1:8000](http://127.0.0.1:8000/)
+## Installation Requirements
+  Clone this repository and navigate to the folder.
+  Run the following commands to allow functionality of the app:-
 
----
-
-## Dependencies
->* python3.8
->* Django 3.1.2
->* virtual environment
->* heroku
-***
+  * sudo apt-get install python3.8
+  * sudo apt-get install python3-pip
+  * sudo apt-get install python3.8-env
+  * python3.8 -m env virtual
+  * source env/bin/activate
+  * pip install -r requirements.txt
+ 
+## Tests
+Run the following command for tests<br>
+  * $ python manage.py test instagram
+  * $ python manage.py test user
 
 ## Technologies Used
->* Bootstrap.
->* Python.
+  * Python 3.8
+  * HTML5, CSS and Bootstrap
+  * jdango3.2.4 Framework
+  * Postgressql
+  * Heroku
 
- 
----
+## Known Bugs
+No known bugs so far
 
-## Support and Contact Information
-> The application is an open-source product if you  want to improve it or include an event of a bug  contact this
-> akumucollins001@gmail.com .
-***
-
+## Support Details
+Contact me for further help<br/> 
+email: enckkipronoh@gmail.com<br/>
+Phone: 0717854859
 ## License
-The project is [MIT](LICENSE) licensed 
+This is the link to the MIT license used<br/><br/>
+https://github.com/encok/Gallery-Application/blob/master/LICENSE
