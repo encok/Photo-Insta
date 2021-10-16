@@ -36,7 +36,7 @@
           <div class="navbar-nav pr-2">
             {% if user.is_authenticated %}
             <a class="nav-item nav-link" href="{% url 'post-create' %}">Create a Post</a>
-            <a class="nav-item nav-link" href="{% url 'profile' %}">Settings</a>
+            <!-- <a class="nav-item nav-link" href="{% url 'profile' %}">Settings</a> -->
             <a class="nav-item nav-link" href="{% url 'logout' %}">Logout</a>
             {% else %}
             <a class="nav-item nav-link" href="{% url 'login' %}">Login</a>
