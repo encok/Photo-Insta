@@ -41,7 +41,7 @@ Run the following command for tests<br>
 
 ## Technologies Used
   * Python 3.8
-  * HTML5, CSS and Bootstrap
+  * HTML5, CSS and Bootstrap4
   * jdango3.2.4 Framework
   * Postgressql
   * Heroku
@@ -55,4 +55,3 @@ email: enckkipronoh@gmail.com<br/>
 Phone: 0717854859
 ## License
 This is the link to the MIT license used<br/><br/>
-https://github.com/encok/Gallery-Application/blob/master/LICENSE
