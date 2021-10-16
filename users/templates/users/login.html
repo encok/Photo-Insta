@@ -1,0 +1,83 @@
+{% extends "instagram/base.html" %}
+{% load static %}
+{% load crispy_forms_tags %}
+{% block content %}
+<div class="container">
+    <div class="row p-0 m-0">
+        <div class="col-lg-6">
+            <img src="https://clipart.info/images/ccovers/1505918650Platinum-Iphone-X-Transparent-Background.png"
+                alt="image" class="img-fluid" style="height:530px;width:650px;">
+        </div>
+        <div class="col-lg-6 mt-4">
+            <div class="card">
+                <legend class="mb-3">
+                    <div class="card-header text-center">
+                        <h1 class="logo" style="font-family: 'Grand Hotel', cursive; color:blue;font-size:65px;">Instagram
+                        </h1>
+                        <h3 class="text-center" style="color:grey;font-size:15px;">Login to see photos and videos from
+                            your friends.
+                        </h3>
+                    </div>
+                </legend>
+                <div class="card-body text-primary">
+                    <form method="POST">
+                        {% csrf_token %}
+                        <fieldset class="form-group">
+                            {{ form | crispy }}
+                        </fieldset>
+                        <div class="form-group">
+                            <button class="btn btn-outline-primary" type="submit">Login</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row p-0 m-0">
+        <div class="col-md-6 mt-3">
+            <div class="card" style="width: 28rem;">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Don't have an account?</h5>
+                    <h2 style="color:grey;font-size:13px;">By signing up, you agree to our Terms, Data Policy and
+                        Cookies Policy.
+                    </h2>
+                    <a href="{% url 'register-users' %}" class="btn btn-primary">Sign Up</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card mt-3" style="width: 28rem;">
+                <div class="card-body text-center">
+                    <h3 class="card-title" style="font-size: 25px;">Get the app.</h3>
+                    <a href="https://itunes.apple.com/ke/app/instagram/id389801252?mt=8"><img
+                            src="{% static 'photos/appstore.png' %}" style="height:70px;width:180px;"></a>
+                    <a href="https://play.google.com/store?hl=en"><img src="{% static 'photos/playstore.png' %}"
+                            style="height:70px;width:180px;"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer mt-3">
+    <div class="col-md-12">
+        <div class=" text-center">
+            <ul class="footer-page">
+                <li class="footer"><a class="about" href="https://about.instagram.com/">About</a></li>
+                <li class="footer"><a class="help" href="https://help.instagram.com/">Help</a></li>
+                <li class="footer"><a class="blog" href="https://about.instagram.com/blog/">Press</a></li>
+                <li class="footer"><a class="developer" href="/developer/">API</a></li>
+                <li class="footer"><a class="jobs" href="/about/jobs/">Jobs</a></li>
+                <li class="footer"><a class="privacy" href="/legal/privacy/">Privacy</a></li>
+                <li class="footer"><a class="terms" href="/legal/terms/">Terms</a></li>
+                <li class="footer"><a class="locations" href="/explore/locations/">Locations</a></li>
+                <li class="footer"><a class="profiles" href="/directory/profiles/">Top Accounts</a></li>
+                <li class="footer"><a class="hashtags" href="/directory/hashtags/">Hashtags</a></li>
+                <li class="footer"><a class="language" href="https://techcrunch.com/tag/language-support/">Language</a></li>
+            </ul>
+        </div>
+        <h6 class="copyright font-weight-bold">© 2020 COLLINS AKUMU</h6>
+    </div>
+</div>
+
+
+{% endblock content %}

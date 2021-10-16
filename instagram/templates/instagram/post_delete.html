@@ -1,0 +1,43 @@
+{% extends "instagram/base.html" %}
+{% block content %}
+<div class="container">
+    <form method="POST" class="col-6 no-padding">
+        {% csrf_token %}
+        <fieldset class="form-group">
+            <legend class="border-bottom mb-4">Delete Post</legend>
+            Do you really want to delete
+        </fieldset>
+        <h2 class="bg-steel p-2"
+           style="border: 1px solid white; border-radius: 4px; word-wrap: break-word;">
+           {{ post.title }}
+    </h2>
+        <div class="form-group">
+            <button class="btn btn-outline-primary" type="submit">Yes</button>
+        </div>
+        <div class="form-group">
+            <a href="{% url 'post-detail' object.id %}" class="btn btn-outline-secondary">Cancel</a>
+        </div>
+    </form>
+</div>
+<div class="footer mt-3">
+    <div class="col-md-12">
+        <div class=" text-center">
+            <ul class="footer-page">
+                <li class="footer"><a class="about" href="https://about.instagram.com/">About</a></li>
+                <li class="footer"><a class="help" href="https://help.instagram.com/">Help</a></li>
+                <li class="footer"><a class="blog" href="https://about.instagram.com/blog/">Press</a></li>
+                <li class="footer"><a class="developer" href="/developer/">API</a></li>
+                <li class="footer"><a class="jobs" href="/about/jobs/">Jobs</a></li>
+                <li class="footer"><a class="privacy" href="/legal/privacy/">Privacy</a></li>
+                <li class="footer"><a class="terms" href="/legal/terms/">Terms</a></li>
+                <li class="footer"><a class="locations" href="/explore/locations/">Locations</a></li>
+                <li class="footer"><a class="profiles" href="/directory/profiles/">Top Accounts</a></li>
+                <li class="footer"><a class="hashtags" href="/directory/hashtags/">Hashtags</a></li>
+                <li class="footer"><a class="language" href="https://techcrunch.com/tag/language-support/">Language</a>
+                </li>
+            </ul>
+        </div>
+        <h6 class="copyright font-weight-bold">© 2020 COLLINS AKUMU</h6>
+    </div>
+</div>
+{% endblock content %}
