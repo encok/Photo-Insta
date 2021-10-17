@@ -29,8 +29,8 @@
       <div class="card-body">
         <div>
           <a href=" {% url 'like' image_id=photo.id %}">
-            <i class="fa fa-heart-o fa-3x text-success" aria-hidden="true"></i></a>
-          <p><strong class="ml-3 photo_likes">{{photo.saved_likes}} </strong>
+          </i><i class="fa fa-heart text-danger" aria-hidden="true"></i></a>
+          <p><strong class="ml-1 photo_likes" style="font-size:24px;">{{photo.saved_likes}} </strong>
             <strong>Likes</strong>
           </p>
         </div>
@@ -38,7 +38,7 @@
           <p class=""><strong>{{photo.name}}</strong> {{photo.caption}}</p>
         </div>
         {% for comment in photo.saved_comments %}
-        <p class="ml-3"><span class="font-weight-bold text-success">{{comment.user.username}}</span>:
+        <p class="ml-3"><span class="font-weight-bold text-success" style="font-size:24px;">{{comment.user.username}}</span>:
           {{comment.comment}}</p>
         {% endfor %}
         <form action="{% url 'commentFunction' photo_id=photo.id %}" method="post">
@@ -52,7 +52,7 @@
     </div>
     <div class="col-md-2">
       <div class="">
-        <h2>People you may know</h2>
+        <h2 style="font-size:24px; color:black;">Others</h2>
       </div>
       <div class="">
         {% if all_users %}
@@ -63,12 +63,12 @@
             <p><a href="{% url 'users_profile' person.id  %}"><img src="{{person.profile.profile_photo.url}}"
                   class="rounded-circle border" alt="profile" style="height: 8vh; width:8vh; border-radius:50%"></a></p>
                   {% else %}
-                  <i style="font-size:100px;color:#630539" class="fa fa-user" aria-hidden="true"></i>
+                  <i style="font-size:36px;color:#be48ae" class="fa fa-user" aria-hidden="true"></i>
                   {% endif %}
           </div>
           <div class="col-md-4">
             <p></p><a href="{% url 'users_profile' person.id   %}">
-              <p class="text-primary">{{person.username}}</p>
+              <p class="text-primary"style="font-size:20px;">{{person.username}}</p>
               </p>
             </a>
           </div>
