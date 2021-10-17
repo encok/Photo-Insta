@@ -31,7 +31,7 @@ Run the following commands to allow functionality of the app:-
 ## Tests
 Run the following command for tests<br>
 * $ python manage.py test instagram
-* $ python manage.py test user
+
 
 ## Technologies Used
 * Python 3.8
