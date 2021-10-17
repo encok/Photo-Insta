@@ -14,9 +14,9 @@ https://github.com/encok/Photo-Insta
 This is an application that a user can sign up and login and then proceed to add an instagram story. One is able to also add an image. Other user can interact with their stories and like and also leave a comment.
 
 ## Screenshots
-<img src="static/images/1.png">
-<img src="static/images/2.png">
-<img src="static/images/3.png">
+<img src="./gram/static/images/1.png">
+<img src="./gram/static/images/2.png">
+<img src="./gram/static/images/3.png">
 
 ## Installation Requirements
 Clone this repository and navigate to the folder.
